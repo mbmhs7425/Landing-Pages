@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Landing Page</title>
+</head>
+<style>
+    *{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+    }
+    body{
+        background: #FFF8E7;
+    }
+    /* HEADER STYLING */
+    header{
+        background: rgb(94, 75, 66);
+        padding: 20px 10%;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo{
+        font-size: 25px;
+        font-weight: bold;
+        color: #cdbc9c;
+    }
+    nav ul{
+        display: flex;
+        list-style: none;
+        gap: 25px;
+    }
+    nav a{
+        color: wheat;
+        text-decoration: none;
+    }
+    .butn{
+        opacity: 0.8;
+        cursor: pointer;
+        background: #e4be9e;
+        color: black;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        padding: 10px 20px;
+    }
+    /* HERO STYLING */
+    .hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:80px 10%;
+    }
+    .hero-text{
+        width: 50%;
+    }
+    .hero-text h1{
+    font-size:50px;
+    margin-bottom:20px;
+    color:#3E2723;
+    }
+    .hero-text p{
+    margin-bottom: 25px;
+    line-height: 1.6;
+    }
+    .hero-image{
+        width: 45%;
+    }
+    .hero-image img{
+        width: 100%;
+    }
+    .btn{
+    background:#D4A373;
+    color:white;
+    padding:10px 20px;
+    text-decoration:none;
+    border-radius:5px;
+}
+    /* ABOUT STYLING */
+    .about{
+        display: flex;
+        gap: 50px;
+        padding: 80px 10%;
+        align-items: center;
+    }
+    .about-text{
+     line-height: 1.8;
+    }
+    /* PRODUCT STYLING */
+    .products{
+    padding: 80px 10%;
+    }
+    .section-title{
+        text-align: center;
+        margin-bottom: 40px;
+        color: #3E2723;
+    }
+    .product-grid{
+        display: grid;
+        grid-template-columns:repeat(3,1fr);
+        gap: 25px;
+    }
+    .card{
+        background: white;
+        padding: 20px;
+        border: 1px solid #add;
+        text-align: center;
+    }
+    .card img{
+        width: 100%;
+    } 
+    /* FEATURES STYLING */
+    .features{
+        padding: 80px 10%;
+    }
+    .features-grid{
+        display: grid;
+        gap: 25px;
+        grid-template-columns:repeat(4,1fr);
+    }
+    .feature{
+        background: rgb(164, 131, 60);
+        color: white;
+        padding: 25px;
+        text-align: center;
+        border-radius: 10px;
+    }
+    /* TESTIMONIALS STYLING */
+    .testimonial{
+        padding: 80px 10%;
+    }
+    .testimonial-container{
+    display: flex;
+    gap: 20px;
+    }
+    .review{
+    background:rgba(248, 176, 113, 0.511);
+    color: black;
+    padding:25px;
+    margin: 2px;
+    border-radius:10px;
+    }
+    /* CONTACT STYLING */
+    .contact{
+        text-align: center;
+        color: rgba(89, 8, 8, 0.695);
+        padding: 80px 10%;
+    }
+    /* FOOTER STYLING */
+    .footer{
+        background: #3E2723;
+        color: white;
+        text-align: center;
+        padding: 30px;
+    }
+</style>
+<body>
+    <!-- HEADER CONTENT -->
+    <header>
+        <nav class="content">
+            <div class="logo"><i><b>BILAL'S  COFFEE  HOUSE</b></i></div>
+            <img id="image"  src="Coffee-Logo-Graphics-6570010-1 (1).jpg" alt="Coffee Logo" height="100px" width="100px">
+           <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">MENU</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">CONTACT US</a></li>
+           </ul>
+           <button class="butn">Order Now</button>
+         
+        </nav>
+    </header>
+    <!-- HERO SECTION CONTENT -->
+ <section class="hero">
+<div class="hero-text">
+    <h1>Enjoy the fresh coffee in the morning</h1>
+    <p>Here you get premium coffe around the world</p>
+    <a href="#" class="btn">View Menu</a>
+</div>
+<div class="hero-image">
+    <img src="Hero-image.png" alt="hero">
+</div>
+ </section>
+ <!-- ABOUT Us CONTENT -->
+  <section class="about">
+    <div class="about-text">
+        <h1>About Us</h1>
+            <p>
+            We have been serving fresh and delicious coffee for over 10 years.
+            Our mission is to provide the best coffee experience to our customers.
+            </p>
+    </div>
+  </section>
+  <!-- PRODUCT CONTENT -->
+   <section class="products">
+    <h2 class="section-title">Popular coffee</h2>
+    <div class="product-grid">
+        <div class="card">
+            <img src="Esspresso.png" alt="Esspresso">
+            <p>Esspresso</p>
+            <p>5$</p>
+        </div>
+        <div class="card">
+            <img src="Capachino.png" alt="Cappuccino">
+            <p>Cappuccino</p>
+            <p>6$</p>
+        </div>
+        <div class="card">
+            <img src="latte.png" alt="Latte">
+            <p>Latte</p>
+            <p>8$</p>
+        </div>
+    </div>
+   </section>
+
+   <!-- FEATURES CONTENT -->
+    <section class="features">
+        <h2 class="section-title">Why Choose Us</h2>
+        <div class="features-grid">
+            <div class="feature">Premium Beans</div>
+            <div class="feature">Fresh Ingredients</div>
+            <div class="feature">Fast Service</div>
+            <div class="feature">Best Taste</div>
+        </div>
+    </section>
+    <!-- TESTIMONIALS CONTENT -->
+     <section class="testimonials">
+        <h2 class="testimonials-title">Testimonial</h2>
+        <div class="testimonial-container">
+            <div class="review">
+                <p>Best Coffe in Town.</p>
+                <h4>Hunain</h4>
+            </div>
+            <div class="review">
+                <p>Must Try.</p>
+                <h4>Saggar</h4>
+            </div>
+            <div class="review">
+                <p>Highly Recommended.</p>
+                <h4>Ahmed</h4>
+            </div>
+        </div>
+     </section>
+     <!-- CONTACT CONTENT -->
+      <section class="contact">
+        <h1>Contact Us</h1>
+        <p>Location: Camp number-2 Nawabshah, Sindh, Pakistan.</p>
+        <p>Phone: 0317-8267353</p>
+        <p>Mail: mbmhs7425@gmail.com</p>
+      </section>
+      <!-- FOOTER CONTENT -->
+       <footer class="footer">@ 2026  All Rights Reserved to BILAL's COFFEE HOUSE</footer>
+</body>
+</html>
